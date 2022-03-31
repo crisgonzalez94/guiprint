@@ -53,3 +53,7 @@ footer{
 a:hover{
     color: rgb(208, 0, 69);
 }
+
+
+.whatsapplink{position:fixed;width:60px;height:60px;
+bottom:40px;right:40px;background-color:#00CC33;color:#FFF;border-radius:50px;text-align:center;font-size:40px;z-index:100}.whatsapplink .bi{position: absolute;right:10px;top:0px;}.whatsapplink:hover{text-decoration:none;color:#25d366;background-color:#fff}.whatsapp-box{margin-top:16px}
