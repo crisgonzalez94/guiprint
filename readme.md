@@ -1,0 +1,3 @@
+Este sitio web cuenta en la raiz del proyecto las paginas principales...
+Las secciones de los productos se encuentran dentro de la carpeta pages.
+Dentro de assets se encuentran las imagenes de productos e imagenes basicas de sitio.
