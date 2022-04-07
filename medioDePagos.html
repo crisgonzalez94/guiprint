@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+    <!--Hoja de estilos especificas para los medios de pago-->
+    <link rel="stylesheet" href="mediosDePago.css">
 
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
@@ -64,119 +66,33 @@
       <!--End navbar-->
       <!---------------------------------------------------------------------------------------------------------->
 
-    <!--------------------------------------------------------------------------------------------------------------------->
-    <!--Carousel-->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div div class="carousel-item active" data-bs-interval="2000">
-                <img src="assets/portadas/portada-1.png" class="d-block w-100" alt="GuiPrint Camisetas de Futbol Personalizadas">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="assets/portadas/portada-2.png" class="d-block w-100" alt="GuiPrint Camisetas de Futbol Personalizadas">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="assets/portadas/portada-3.png" class="d-block w-100" alt="GuiPrint Camisetas de Futbol Personalizadas">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!--------------------------------------------------------------------------------------------------------------------->
-    <!--End Carousel--> 
 
-    <div class="container" id="productsBox">
-        <h1>Personaliza tu mundo con GuiPrint</h1>
-        <h3>Mira el catálogo de todos nuestros productos</h3>
-        <div class="row">
-            <!---------------------------------------------------------------->
-            <!--Futbol-->
-            <div class="col-md-4"> 
-                <div class="card">
-                    <img class="card-img-top" src="assets/camisetas-futbol.png" alt="Camisetas de Futbol personalizadas">
-                    <div class="card-body">
-                    <a href="pages/camisetas-de-futbol.html" class="card-title">Equipos de Futbol</a>
-                    </div>
-                </div>
-            </div>
-            <!--End Futbol-->
-            <!---------------------------------------------------------------->
-            <!---------------------------------------------------------------->
-            <!--Tenis-->
-            <div class="col-md-4"> 
-                <div class="card">
-                    <img class="card-img-top" src="assets/polera-tennis.png" alt="Camisetas de Tenis">
-                    <div class="card-body">
-                    <a href="#" class="card-title">Equipos de Tenis</a>
-                    </div>
-                </div>
-            </div>
-            <!--End Tenis-->
-            <!---------------------------------------------------------------->
-            <!---------------------------------------------------------------->
-            <!--Basquet-->
-            <div class="col-md-4"> 
-                <div class="card">
-                    <img class="card-img-top" src="assets/camisetas-basquet.png" alt="Camisetas de Basquet para tu equipo, el diseño que quieras">
-                    <div class="card-body">
-                    <a href="#" class="card-title">Equipos de Basquet</a>
-                    </div>
-                </div>
-            </div>
-            <!--End Basquet-->
-            <!---------------------------------------------------------------->
-            <!--Indumentaria Infantil-->
-            <div class="col-md-4"> 
-                <div class="card">
-                    <img class="card-img-top" src="assets/indumentariaInfantil/poleraInfantil.png" alt="Indumentaria infantil, online , envio todo chile">
-                    <div class="card-body">
-                    <a href="#" class="card-title">Indumentaria Infantil</a>
-                    </div>
-                </div>
-            </div>
-            <!--End Indumentaria Infantil-->
-            <!---------------------------------------------------------------->
-            <!--Poleras-->
-            <div class="col-md-4"> 
-                <div class="card">
-                    <img class="card-img-top" src="assets/poleras/polerasPolo.png" alt="Poleras personalizadas con tu logo.">
-                    <div class="card-body">
-                    <a href="#" class="card-title">Poleras</a>
-                    </div>
-                </div>
-            </div>
-            <!--End Poleras-->
-            <!---------------------------------------------------------------->
-            <!--Polerones-->
-            <div class="col-md-4"> 
-                <div class="card">
-                    <img class="card-img-top" src="assets/poleronesCanguro/poleron-canguro.png" alt="Polerones Canguros personalizados con tu logo envios a todo chile.">
-                    <div class="card-body">
-                    <a href="#" class="card-title">Polerones</a>
-                    </div>
-                </div>
-            </div>
-            <!--End Polerones-->
-            <!---------------------------------------------------------------->
-            <!--Tazones-->
-            <div class="col-md-4"> 
-                <div class="card">
-                    <img class="card-img-top" src="assets/tazones/tazones.png" alt="Camisetas de Basquet para tu equipo, el diseño que quieras">
-                    <div class="card-body">
-                    <a href="#" class="card-title">Tazones</a>
-                    </div>
-                </div>
-            </div>
-            <!--End Tazones-->
-            <!---------------------------------------------------------------->
-        </div>
+    <div class="container payFormContainer">
 
-         <!------------------------------------------------------------------------------>
+        <h1>Información de Pago</h1>
+        <hr>
+
+        <label for="owner">Titular de la Cuenta</label>
+        <input name="owner" type="text" id="owner" placeholder="Cecilia Hernandez Varela" readonly>
+        <button id="btnCopyOwner" class="btnCopy" onclick="copyInputFormContent('btnCopyOwner' , 'Cecilia Hernandez Varela')">Copiar</button>
+        <br>
+
+        <label for="rut">Rut</label>
+        <input type="text" name="rut" id="rut" placeholder="26125039-K" readonly>
+        <button id="btnCopyRut" class="btnCopy" onclick="copyInputFormContent('btnCopyRut' , '26125039-K')">Copiar</button>
+        <br>
+
+        <label for="bank">Banco Estado</label>
+        <input type="text" name="bank" id="bank" placeholder="Cuenta Corriente" readonly>
+        <button id="btnCopyBank" class="btnCopy" onclick="copyInputFormContent('btnCopyBank' , 'Banco Estado: Cuenta Corriente')">Copiar</button>
+
+        <hr>
+
+        <p>Cualquier duda o consulta sobre los medios de pago por favor comuníquese con nosotros.</p>
+
+        <hr>
+
+        <!------------------------------------------------------------------------------>
         <!--Steeps-->
         <div class="row">
             <h3>La prenda de tus Sueños en tres simples pasos:</h3>
@@ -222,7 +138,7 @@
     <!---------------------------------------------------------------------------------------------------->
 
 
-    
+    <script src="src/medioDePago.js"></script>
     
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

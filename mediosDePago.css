@@ -1,0 +1,41 @@
+.payFormContainer{
+    text-align: center;
+}
+label{
+    display: block;
+    font-size: 25px;
+}
+input{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 20px;
+    background: none;
+}
+input::placeholder{
+    color: white;
+}
+button{
+    font-size: 20px;
+    background: none;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+}
+button:hover , button:focus{
+    background: white;
+    color: black;
+}
+button:active{
+    background: gray;
+    color: black;
+}
+
+@media (max-width: 408px){
+    input , button{
+        font-size: 15px;
+    }
+}
