@@ -1,0 +1,28 @@
+#country: chile
+User-agent: Googlebot
+Allow: /
+Allow: /index
+Allow: /indumentariadeportiva
+Allow: /ropapersonalizada
+Allow: /contacto
+Allow: /pages/camisetas-de-futbol
+Allow: /pages/polerasdetenis
+Allow: /pages/basquet
+Allow: /pages/poleras
+Allow: /pages/polerasmangaslargas
+Allow: /pages/poleroncanguro
+
+User-agent: *
+Allow: /
+Allow: /index
+Allow: /indumentariadeportiva
+Allow: /ropapersonalizada
+Allow: /contacto
+Allow: /pages/camisetas-de-futbol
+Allow: /pages/polerasdetenis
+Allow: /pages/basquet
+Allow: /pages/poleras
+Allow: /pages/polerasmangaslargas
+Allow: /pages/poleroncanguro
+
+Sitemap: https://www.guiprint.cl/sitemap.xml
