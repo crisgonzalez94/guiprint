@@ -28,14 +28,14 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
 
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/LocalBusiness">
 
     <!--------------------------------------------------------------------------------------------------------->
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/logo.svg" alt="" height="40px">
+                <img src="assets/logo.svg" alt="" height="40px" itemprop="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,12 +73,13 @@
     <!--------------------------------------------------------------------------------------------------------------------->
     <!--Main Content-->
     <div class="container">
-        <h1>Bienvenidos a GuiPrint Chile</h1>
-        <h2>"Personalizamos tu mundo"</h2>
+        <h1>Bienvenidos a <span itemprop="legalName">GuiPrint</span> <span itemprop="areaServed">Chile</span></h1>
+        <h2 itemprop="slogan">"Personalizamos tu mundo"</h2>
         
-        <p>Somos una empresa Chilena dedicada a la confeccion, diseño y personalizacion de Ropa Deportiva, Corporativa y Casual.</p>
+        <p>Somos una empresa Chilena de <span itemprop="location">Santiago</span> dedicada a la confeccion, diseño y personalizacion de Ropa Deportiva, Corporativa y Casual.</p>
         <p>Nuestro objetivo es plasmar la prenda que nuestros tienen en sus mentes a un producto real... como decimos nosotros en el caso de las indumentarias deportivas... "Literalmente la camiseta de tus sueños".</p>
-        <p>Hacemos envios a todo el País a travez de Chilexpress y Starken.</p>
+        <p>Para llevar esto a cabo utilizamos materias primas de primera calidad de fabricación nacional.</p>
+        <p>Hacemos envios a todo el País a travez de <span itemprop="brand">Chilexpress</span> y <span itemprop="brand">Starken</span>.</p>
         <p>Puede usted consultar nuestros medios de pago <a href="medioDePagos.html" target="_blank">aquí.</a></p>
 
         <br>
